@@ -129,7 +129,7 @@ h1 {
     border: 2px black solid;
     width: 201.5px;
     text-align: center;
-    font: larger "Courier New", Courier, monospace;
+    font: medium "Arial", monospace;
     padding: 10px;
     position: relative;
     left: -3.5px;

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <html>
-    
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="Puru Bhagat" />
+    <meta name="author" content="Sava and Vadim"/>
     <title>
-        Excelsior Cinema Hong Kong | Movies and More | Watch the latest movies in Hong Kong
+        Excelsior Cinema Kharkiv | Movies and More | Watch the latest movies in Kharkiv
         with us
     </title>
     <link rel="stylesheet" type="text/css" href="../css/common_style.css" media="all" />
@@ -14,9 +14,6 @@
 </head>
 
 <body>
-    <div id="search">
-        <p>|<a href="homepage.html">Excelsior Cinema</a>|Search: <input type="text" /></p>
-    </div>
     <div class="transluscent-mat">
         <!--Banner-->
         <header>
@@ -41,42 +38,13 @@
                         <a href="now_showing.html">Now Showing</a>
                     </li>
                     <li class="nav">
-                        <a href="ticket.html">Ticket</a>
+                        <a href="cinema_location.html">Cinema Location</a>
                     </li>
                     <li class="nav">
-                        <a href="cinema_location.html">Cinema Location</a>
+                        <a href="about.html" >About us</a>
                     </li>
                 </ul>
             </nav>
-            <!--Feature film and trailer-->
-            <div class="layout">
-                <div class="block">
-                    <div>
-                        <h4 id="feature">TRAILERS & FEAUTURE FILM</h4>
-                    </div>
-                    <div id="textright" class="verticalline block-left">
-                        <h3 id="movieName" class="pfeature">NATURES REVENGE</h3>
-                        <div id="audioControl">
-                            <img id="mute" src="../images/mute.png" alt="mute" class="icon" onclick="return toggle_voice(false);">
-                            <img id="unmute" src="../images/unmute.png" alt="unmute" class="icon" onclick="return toggle_voice(true);">
-                        </div>
-                        <video id="video" controls="controls" onended="setTimeout('change_video()',3000)">
-                        </video>
-                    </div>
-                    <div id="featuretext">
-                        <h3 class="pfeature">NATURES REVENGE</h3>
-                        <div id="featureinfo">
-                            <p class="pfeature"><span class="subheadings">DIRECTOR: </span>Woodpecker Allen</p>
-                            <p class="pfeature"><span class="subheadings">STARRING: </span>Emu Watson, Alligator Jolie, Kanagaroo Ranaut and Ian McKoala.</p>
-                            <p class="pfeature"><span class="subheadings">GENRE: </span>ACTION/DRAMA</p>
-                            <p class="pfeature"><span class="subheadings">RUNNING TIME: </span>135 min</p>
-                            <p class="pfeature"><span class="subheadings">LANGUAGE: </span>English</p>
-                            <p class="pfeature"><span class="subheadings">SYNOPSIS: </span>The mighty nature has finally retaliated after years of oppression. Humans are the
-                            only beings that stand between the animals and world domination.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
             <!--Now showing and coming soon.-->
             <div class="layout">
                 <div class="block">
@@ -219,13 +187,13 @@
             </div>
         </div>
     </div>
-    
-    <footer>
+
+    <footer style="margin: 0;">
         <!--sitemap-->
-        <nav>
+        <nav style="display: flex; align-self: center; justify-content: center; width: 100%;height: auto;">
             <ul id="sitemap">
                 <li class="smap">
-                    <a href="homepage.html" class="sitemap">MOVIES</a> | 
+                    <a href="homepage.html" class="sitemap">MOVIES</a> |
                 </li>
                 <li class="smap">
                     <a href="now_showing.html" class="sitemap">NOW SHOWING</a> |
@@ -253,16 +221,8 @@
                 </li>
             </ul>
         </nav>
-        <hr />
-        <!--Copyright and design link-->
-        <div id="bottomfooter">
-            <span id="designsalutation">
-                Site <a href="design.html" target="_blank">design </a>by Puru Bhagat.
-            </span>
-            <span>
-                © Copyright 2015 Excelsior Cinema. All Rights Reserved.
-            </span>
-        </div>
+
+        <hr/>
     </footer>
     <script type="text/javascript" src="../js/homepage.js"></script>
     <script type="text/javascript" src="../js/now_showing.js"></script>

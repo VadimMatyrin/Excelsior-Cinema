@@ -31,7 +31,7 @@ String.prototype.replaceAt=function(index, character) {
 }
 
 var table = document.getElementById('table');
-var capchar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var capchar = "123456789";
 
 function makeSeatingPlan(){
 	for(var j=0; j<rows; j++){
@@ -43,7 +43,7 @@ function makeSeatingPlan(){
 
 			if(i==0){
 				cell.className = 'marker_cell';
-				cell.innerHTML = capchar[j]; 
+				cell.innerHTML = capchar[j];
 				row.appendChild(cell);
 			}
 			else{
@@ -88,7 +88,7 @@ for(var i=0; i<availableSeats.length; i++){
 var convertToSeatNumber = function(seatNo){
 	var str = "";
 	console.log(columns*(Math.floor(seatNo/columns)));
-	str = capchar[parseInt(seatNo/columns)] + parseInt(seatNo-(columns*(Math.floor(seatNo/columns)))+1);
+	str = '\n' + capchar[parseInt(seatNo/columns)] + ' row ' + parseInt(seatNo-(columns*(Math.floor(seatNo/columns)))+1) + ' seat';
 	return str;
 }
 
