@@ -112,6 +112,6 @@ var submitForm = function submitForm(){
 		location.reload();
 		return false;
 	}
-	
+
 	document.getElementById('screen_container').innerHTML;
 }
