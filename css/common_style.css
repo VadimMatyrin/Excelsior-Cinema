@@ -1,9 +1,9 @@
 body { 
-    background: url("../images/bokkeh_background.jpg") no-repeat center center fixed, blue; 
+    background: url("../images/bokkeh_background.jpg") repeat center center, blue;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: auto;
 }
 
 #search {
@@ -44,7 +44,7 @@ div p {
         }
 
 header {
-    background-color: black;
+    background-color: #03070a;
     border: 0.5px solid black;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -77,6 +77,8 @@ h1 {
 }
 
 #bannerimage img {
+    margin-top: -20px;
+    margin-left: 120px;
     height: 100px;
     width: 100px;
     border: black solid 2px;
@@ -96,8 +98,13 @@ h1 {
 }
 
 .homelink {
-    color: silver;
+    color: white;
     text-decoration: none;
+}
+
+.homelink h1 {
+
+    margin-right: 190px;
 }
 
 .transluscent-mat {

@@ -88,7 +88,7 @@ for(var i=0; i<availableSeats.length; i++){
 var convertToSeatNumber = function(seatNo){
 	var str = "";
 	console.log(columns*(Math.floor(seatNo/columns)));
-	str = '\n' + capchar[parseInt(seatNo/columns)] + ' row ' + parseInt(seatNo-(columns*(Math.floor(seatNo/columns)))+1) + ' seat';
+	str = '\n' + capchar[parseInt(seatNo/columns)] + ' row ' + parseInt(seatNo-(columns*(Math.floor(seatNo/columns)))+1) + ' seat' + ' - 60 ₴';
 	return str;
 }
 
@@ -102,6 +102,7 @@ var submitForm = function submitForm(){
 
 	var str =  movie_info.movies[titleID].Name + " - " + movie_info.movies[titleID].Time[timeID] + " - " + movie_info.movies[titleID].Date[dateID];
 	str = str + "\nThe following seats were booked: " + elements;
+	str = str + `\nSum: ${selectedElements.length * 60} ₴`;
 	var r = window.confirm(str);
 
 	if(r == true){
