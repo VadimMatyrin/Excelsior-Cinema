@@ -11,6 +11,11 @@
     </title>
     <link rel="stylesheet" type="text/css" href="../css/common_style.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../css/now_showing.css" media="all" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 
 <body>
@@ -57,11 +62,17 @@
                         <form class="form" action="ticket.html" method="get">
 							<h3><span class="form_movie"></span></h3>
 							<div class="choices">
-								<strong>Movie Name: </strong> <br><span class="form_movie_name"></span><br><br>
-								<select name="date" class="date"></select>
-								<select name="time" class="time"></select>
-								<input type="hidden" name="titleIndex" value=0 />
-								<button type="submit">Buy Ticket</button>
+                                    <span class="form_movie_name text-capitalize"></span><br><br><br><br>
+                                    <div class="col-xs-6" style="padding-left: 0">
+                                        <select name="date" class="col-sm-6 date form-control"></select>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <select name="time" class="col-sm-6 time form-control"></select>
+                                    </div>
+								<input type="hidden" name="titleIndex" value=0 /><br>
+                                <div class="block-center" style="margin-top: 50px">
+								    <button type="submit" class="btn btn-primary btn-lg ">Buy Ticket</button>
+                                </div>
 							</div>
                     </form>
                     </div>
@@ -75,13 +86,19 @@
                     <div class="nsblock-right">
                         <form class="form" action="ticket.html" method="get">
 							<h3><span class="form_movie"></span></h3>
-							<div class="choices">
-								<strong>Movie Name: </strong> <br><span class="form_movie_name"></span><br><br>
-								<select name="date" class="date"></select>
-								<select name="time" class="time"></select>
-								<input type="hidden" name="titleIndex" value=1 />
-								<button type="submit">Buy Ticket</button>
-							</div>
+                            <div class="choices">
+                                <span class="form_movie_name text-capitalize"></span><br><br><br><br>
+                                <div class="col-xs-6" style="padding-left: 0">
+                                    <select name="date" class="col-sm-6 date form-control"></select>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select name="time" class="col-sm-6 time form-control"></select>
+                                </div>
+                                <input type="hidden" name="titleIndex" value=0 /><br>
+                                <div class="block-center" style="margin-top: 50px">
+                                    <button type="submit" class="btn btn-primary btn-lg ">Buy Ticket</button>
+                                </div>
+                            </div>
 						</form>
                     </div>
                 </div>
@@ -94,13 +111,19 @@
                     <div class="nsblock-right">
                         <form class="form" action="ticket.html" method="get">
 							<h3><span class="form_movie"></span></h3>
-							<div class="choices">
-								<strong>Movie Name: </strong> <br><span class="form_movie_name"></span><br><br>
-								<select name="date" class="date"></select>
-								<select name="time" class="time"></select>
-								<input type="hidden" name="titleIndex" value=2 />
-								<button type="submit">Buy Ticket</button>
-							</div>
+                            <div class="choices">
+                                <span class="form_movie_name text-capitalize"></span><br><br><br><br>
+                                <div class="col-xs-6" style="padding-left: 0">
+                                    <select name="date" class="col-sm-6 date form-control"></select>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select name="time" class="col-sm-6 time form-control"></select>
+                                </div>
+                                <input type="hidden" name="titleIndex" value=0 /><br>
+                                <div class="block-center" style="margin-top: 50px">
+                                    <button type="submit" class="btn btn-primary btn-lg ">Buy Ticket</button>
+                                </div>
+                            </div>
                     </form>
                     </div>
                 </div>
@@ -145,6 +168,10 @@
         <hr/>
     </footer>
         <script type="text/javascript" src="../js/now_showing.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

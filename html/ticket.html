@@ -11,6 +11,9 @@
     </title>
     <link rel="stylesheet" content="text/css" href="../css/common_style.css" media="all" />
     <link rel="stylesheet" content="text/css" href="../css/ticket.css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
 </head>
 
 <body>
@@ -47,11 +50,16 @@
             </nav>
             <div class="layout">
                 <h4 class="pageheading">BOOK FOR</h4>
-                <h2 id="movie_title"></h2>
-				<h4 id="movie_in"></h4>
+                <div id="left_container">
+                    <h2 id="movie_title"></h2>
+                    <h4 id="movie_in"></h4>
+                    <br>
+                    <br><br><br><br><br>
+                </div>
 				<div id="screen_container">
+                    <div id="screenText">SCREEN</div>
 					<div id="screen">
-						<strong>SCREEN</strong>
+
 					</div>
 					<div class="table" id="table">
 	
@@ -111,6 +119,10 @@
     </footer>
 	<script type="text/javascript" src="../js/movie_info.js"></script>
 	<script type="text/javascript" src="../js/tickets.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
